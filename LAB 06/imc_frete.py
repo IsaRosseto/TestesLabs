@@ -1,8 +1,3 @@
-# Laboratório 6 - Técnicas Caixa-Preta
-# Partição de Equivalência e Valor-Limite
-
-
-
 
 def calcular_imc(peso, altura):
     if peso <= 0 or altura <= 0:

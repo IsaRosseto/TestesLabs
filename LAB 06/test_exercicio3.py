@@ -2,14 +2,6 @@ import pytest
 
 from imc_frete import classificar_por_faixas, classificar_vento
 
-
-# classes de equivalência do vento:
-#   < 20        -> calmo
-#   [20, 40)    -> moderado
-#   [40, 60)    -> forte
-#   >= 60       -> tempestade
-# fronteiras: 20, 40 e 60
-
 def test_classificar_por_faixas_generica():
     faixas = [(10, "baixo"), (20, "medio"), (None, "alto")]
     assert classificar_por_faixas(5, faixas) == "baixo"

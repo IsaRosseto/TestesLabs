@@ -3,11 +3,6 @@ import pytest
 from imc_frete import tem_frete_gratis
 
 
-# C1: valor_compra >= 200
-# C2: cliente_premium
-# C3: peso <= 30
-# frete gratis só quando as três condições são verdadeiras
-
 @pytest.mark.parametrize("valor_compra, cliente_premium, peso, esperado", [
     (250, True, 20, True),    # R1: V V V
     (250, True, 40, False),   # R2: V V F
@@ -39,10 +34,10 @@ def test_tabela_decisao_frete(valor_compra, cliente_premium, peso, esperado):
 #   - RR4: com valor_compra e premium ok, só falta checar o peso
 
 @pytest.mark.parametrize("valor_compra, cliente_premium, peso, esperado", [
-    (250, True, 20, True),     # RR1
-    (150, True, 20, False),    # RR2 (peso e premium são don't care)
-    (250, False, 20, False),   # RR3 (peso é don't care)
-    (250, True, 40, False),    # RR4
+    (250, True, 20, True),     
+    (150, True, 20, False),    
+    (250, False, 20, False),   
+    (250, True, 40, False),    
 ], ids=["RR1_gratis", "RR2_valor_baixo", "RR3_sem_premium", "RR4_peso_alto"])
 def test_tabela_decisao_frete_reduzida(valor_compra, cliente_premium, peso, esperado):
     assert tem_frete_gratis(valor_compra, cliente_premium, peso) == esperado

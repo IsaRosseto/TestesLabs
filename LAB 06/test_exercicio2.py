@@ -3,10 +3,6 @@ import pytest
 from imc_frete import calcular_imc, categorizar_imc
 
 
-# fronteiras: 18.5, 25 e 30
-# para cada uma, testamos o valor logo abaixo e o valor exato,
-# o que já cobre as 6 posições-limite sem precisar de 9 casos
-
 @pytest.mark.parametrize("imc, esperado", [
     (18.4, "abaixo do peso"),
     (18.5, "peso normal"),
