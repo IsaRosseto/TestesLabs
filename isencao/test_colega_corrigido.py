@@ -1,7 +1,3 @@
-"""Exercicio 4(b): teste do colega com os valores dos X corrigidos (5 casos).
-
-Contra a implementacao correta (isencao.py) todos passam.
-"""
 import pytest
 
 from isencao import isento
