@@ -1,7 +1,3 @@
-"""Exercicio 3(c): uma linha por regra da tabela reduzida.
-
-Valores dos X escolhidos "contra" o resultado esperado (ver respostas.md, Ex. 4c).
-"""
 import pytest
 
 from isencao import isento
