@@ -1,7 +1,3 @@
-"""Exercicio 4(b): casos corrigidos aplicados a isento_errado.
-
-R2 FALHA (app=True, 241 min: errado devolve True, esperado False): defeito detectado.
-"""
 import pytest
 
 from isento_errado import isento
