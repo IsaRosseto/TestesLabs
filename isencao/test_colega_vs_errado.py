@@ -1,7 +1,3 @@
-"""Exercicio 4(a): o teste ORIGINAL do colega aplicado a isento_errado.
-
-Todos passam: o defeito nao e detectado.
-"""
 import pytest
 
 from isento_errado import isento
