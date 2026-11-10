@@ -1,4 +1,3 @@
-"""Exercicio 1(c): suite de classes de equivalencia e valores-limite."""
 import pytest
 
 from estacionamento import calcular_tarifa

@@ -1,4 +1,3 @@
-"""Exercicio 2(b): suite do Exercicio 1 aplicada a versao do estagiario."""
 import pytest
 
 from estacionamento_estagiario import calcular_tarifa

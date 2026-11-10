@@ -1,4 +1,3 @@
-"""Exercicio 2(c): um unico representante por classe valida (sem valores-limite)."""
 import pytest
 
 from estacionamento_estagiario import calcular_tarifa
